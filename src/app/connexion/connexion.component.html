@@ -1,0 +1,19 @@
+<clr-modal [(clrModalOpen)]="openConnexion">
+    <h3 class="modal-title">I have a nice title</h3>
+    <div class="modal-body">
+        <form clrForm clrLayout="vertical" [formGroup]="exampleForm">
+            <clr-input-container>
+                <label>Identifiant ou Adresse Mail</label>
+                <input clrInput type="text" formControlName="identifiant" />
+            </clr-input-container>
+            <clr-input-container>
+                <label>Mot de Passe</label>
+                <input clrInput type="text" formControlName="motDePasse" />
+            </clr-input-container>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline" (click)="basic = false">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="basic = false">Ok</button>
+    </div>
+</clr-modal>

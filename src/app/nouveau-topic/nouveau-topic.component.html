@@ -1,0 +1,45 @@
+<form clrForm clrLayout="vertical" [formGroup]="exampleForm" class="col-md-12">
+    <clr-input-container>
+        <label>Titre du Topic</label>
+        <input clrInput type="text" formControlName="sample" size="100"/>
+        <!-- <clr-control-helper>Helper text that shows while it is pristine and valid</clr-control-helper> -->
+        <clr-control-error>Ce champ est requis</clr-control-error>
+    </clr-input-container>
+    <clr-textarea-container style="width: 100%">
+        <label>Label</label>
+        <textarea clrTextarea formControlName="sample" style="width: 100%;"></textarea>
+        <clr-control-helper>Helper text</clr-control-helper>
+        <clr-control-error>You must provide a description!</clr-control-error>
+      </clr-textarea-container>
+      <clr-checkbox-container>
+        <clr-checkbox-wrapper>
+          <input type="checkbox" clrCheckbox value="option1" name="options" />
+          <label>Option 1</label>
+        </clr-checkbox-wrapper>
+        <clr-checkbox-wrapper>
+          <input type="checkbox" clrCheckbox value="option2" name="options" />
+          <label>Option 2</label>
+        </clr-checkbox-wrapper>
+      </clr-checkbox-container>
+
+      <input type="submit" value="Créer le topic" class="btn btn-outline">
+      <!-- <clr-tabs>
+        <clr-tab>
+            <button clrTabLink>Dashboard</button>
+            <ng-template [(clrIfActive)]="dashboardActive">
+                <clr-tab-content>
+                    ...
+                </clr-tab-content>s
+            </ng-template>
+        </clr-tab>
+    
+        <clr-tab>
+            <button clrTabLink>Management</button>
+            <ng-template [(clrIfActive)]="managementActive">
+                <clr-tab-content>
+                    ...
+                </clr-tab-content>
+            </ng-template>
+        </clr-tab>
+    </clr-tabs> -->
+</form>
